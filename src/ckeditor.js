@@ -36,7 +36,6 @@ import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
-
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -83,6 +82,8 @@ ClassicEditor.defaultConfig = {
 			'link',
 			'bulletedList',
 			'numberedList',
+			'|',
+			'alignment',
 			'|',
 			'indent',
 			'outdent',
