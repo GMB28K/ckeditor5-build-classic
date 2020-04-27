@@ -44,6 +44,7 @@ export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
+	Markdown,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -71,8 +72,7 @@ ClassicEditor.builtinPlugins = [
 	ImageResize,
 	Mention,
 	WordCount,
-	SimpleUploadAdapter,
-	Markdown
+	SimpleUploadAdapter
 ];
 
 // Editor configuration.
@@ -104,10 +104,10 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'imageStyle:alignLeft',
 			'imageStyle:full',
-			'imageStyle:alignRight',
+			'imageStyle:alignRight'
 		],
 
-		styles: ['full', 'alignLeft', 'alignRight']
+		styles: [ 'full', 'alignLeft', 'alignRight' ]
 	},
 	table: {
 		contentToolbar: [
