@@ -98,6 +98,7 @@
     }
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-markdown-gfm": "^18.0.0",
     "@ckeditor/ckeditor5-upload": "latest",
     "@ckeditor/ckeditor5-word-count": "^18.0.0"
   }
