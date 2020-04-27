@@ -34,17 +34,13 @@ import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import Mention from '@ckeditor/ckeditor5-mention/src/mention.js';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
-import GFMDataProcessor from '@ckeditor/ckeditor5-markdown-gfm/src/gfmdataprocessor';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
-function Markdown( editor ) {
-	editor.data.processor = new GFMDataProcessor( editor.editing.view.document );
-}
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
-	Markdown,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -72,7 +68,8 @@ ClassicEditor.builtinPlugins = [
 	ImageResize,
 	Mention,
 	WordCount,
-	SimpleUploadAdapter
+	SimpleUploadAdapter,
+	Alignment
 ];
 
 // Editor configuration.
